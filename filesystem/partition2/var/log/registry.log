@@ -1,0 +1,151 @@
+[2025-07-07 01:58:12] USER: systemd-logind -> session opened for user root by (uid=0)
+[2025-07-07 01:58:15] PAM: Authentication success for user 'root' from 192.168.1.10
+[2025-07-07 01:58:16] SSH: New connection from 192.168.1.10 using RSA key fingerprint SHA256:AA:BB:CC...
+[2025-07-07 01:58:18] BASH: Executed command `ls -la /home/root`
+[2025-07-07 01:58:20] FILE: /etc/passwd read by user 'root'
+[2025-07-07 01:58:22] BASH: Executed command `cat /etc/shadow`
+[2025-07-07 01:58:25] FILE: /var/log/auth.log modified by user 'root'
+[2025-07-07 01:58:30] CRON: Job registered - `0 3 * * * root /usr/bin/backup.sh`
+[2025-07-07 01:58:35] BASH: Executed command `exit`
+[2025-07-07 01:58:36] SSH: Session closed for 192.168.1.10
+[2025-07-07 01:59:01] USER: systemd-logind -> session opened for user iotadmin by (uid=0)
+[2025-07-07 01:59:03] PAM: Authentication success for user 'iotadmin' from 10.0.0.5
+[2025-07-07 01:59:04] SSH: New connection from 10.0.0.5 using RSA key fingerprint SHA256:DD:EE:FF...
+[2025-07-07 01:59:07] BASH: Executed command `sudo apt update`
+[2025-07-07 01:59:10] BASH: Executed command `sudo apt upgrade -y`
+[2025-07-07 01:59:15] FILE: /var/log/syslog read by user 'iotadmin'
+[2025-07-07 01:59:18] BASH: Executed command `logout`
+[2025-07-07 01:59:19] SSH: Session closed for 10.0.0.5
+[2025-07-07 02:00:01] USER: systemd-logind -> session opened for user guest by (uid=0)
+[2025-07-07 02:00:03] PAM: Authentication failure for user 'guest' from 172.16.0.2
+[2025-07-07 02:00:05] SSH: Failed connection from 172.16.0.2 using password authentication
+[2025-07-07 02:00:10] PAM: Authentication failure for user 'guest' from 172.16.0.2
+[2025-07-07 02:00:12] SSH: Failed connection from 172.16.0.2 using password authentication
+[2025-07-07 02:00:15] USER: systemd-logind -> session closed for user guest
+[2025-07-07 02:01:00] CRON: Job executed - `/usr/local/bin/cleanup.sh`
+[2025-07-07 02:01:05] FILE: /tmp/cleanup.log created by user 'root'
+[2025-07-07 02:01:10] BASH: Executed command `rm -rf /tmp/cleanup.log`
+[2025-07-07 02:01:15] FILE: /etc/ssh/sshd_config read by user 'root'
+[2025-07-07 02:01:20] BASH: Executed command `systemctl restart sshd`
+[2025-07-07 02:01:25] USER: systemd-logind -> session opened for user admin by (uid=0)
+[2025-07-07 02:01:27] PAM: Authentication success for user 'admin' from 192.168.1.20
+[2025-07-07 02:01:29] SSH: New connection from 192.168.1.20 using RSA key fingerprint SHA256:11:22:33...
+[2025-07-07 02:01:32] BASH: Executed command `whoami`
+[2025-07-07 02:01:35] FILE: /home/admin/.bash_history modified by user 'admin'
+[2025-07-07 02:01:40] BASH: Executed command `logout`
+[2025-07-07 02:01:41] SSH: Session closed for 192.168.1.20
+[2025-07-07 02:02:00] CRON: Job executed - `/usr/local/bin/rotate_logs.sh`
+[2025-07-07 02:02:05] FILE: /var/log/rotate.log created by user 'root'
+[2025-07-07 02:02:10] BASH: Executed command `rm -rf /var/log/rotate.log`
+[2025-07-07 02:02:15] USER: systemd-logind -> session opened for user iotadmin by (uid=0)
+[2025-07-07 02:02:17] PAM: Authentication success for user 'iotadmin' from 10.0.0.6
+[2025-07-07 02:02:18] SSH: New connection from 10.0.0.6 using RSA key fingerprint SHA256:44:55:66...
+[2025-07-07 02:02:20] BASH: Executed command `touch /tmp/testfile`
+[2025-07-07 02:02:22] FILE: /tmp/testfile created by user 'iotadmin'
+[2025-07-07 02:02:25] BASH: Executed command `rm /tmp/testfile`
+[2025-07-07 02:02:27] SSH: Session closed for 10.0.0.6
+[2025-07-07 02:03:00] CRON: Job executed - `/usr/local/bin/monitor.sh`
+[2025-07-07 02:03:05] FILE: /var/log/monitor.log created by user 'root'
+[2025-07-07 02:03:10] BASH: Executed command `rm -rf /var/log/monitor.log`
+[2025-07-07 02:03:15] USER: systemd-logind -> session opened for user root by (uid=0)
+[2025-07-07 02:03:17] PAM: Authentication success for user 'root' from 192.168.1.11
+[2025-07-07 02:03:18] SSH: New connection from 192.168.1.11 using RSA key fingerprint SHA256:77:88:99...
+[2025-07-07 02:03:20] BASH: Executed command `uname -a`
+[2025-07-07 02:03:22] FILE: /etc/hostname read by user 'root'
+[2025-07-07 02:03:25] BASH: Executed command `logout`
+[2025-07-07 02:03:26] SSH: Session closed for 192.168.1.11
+[2025-07-07 02:04:00] CRON: Job executed - `/usr/local/bin/update.sh`
+[2025-07-07 02:04:05] FILE: /var/log/update.log created by user 'root'
+[2025-07-07 02:04:10] BASH: Executed command `rm -rf /var/log/update.log`
+[2025-07-07 02:04:15] USER: systemd-logind -> session opened for user admin by (uid=0)
+[2025-07-07 02:04:17] PAM: Authentication success for user 'admin' from 192.168.1.21
+[2025-07-07 02:04:18] SSH: New connection from 192.168.1.21 using RSA key fingerprint SHA256:AA:BB:CC...
+[2025-07-07 02:04:20] BASH: Executed command `df -h`
+[2025-07-07 02:04:22] FILE: /etc/fstab read by user 'admin'
+[2025-07-07 02:04:25] BASH: Executed command `logout`
+[2025-07-07 02:04:26] SSH: Session closed for 192.168.1.21
+[2025-07-07 02:05:00] CRON: Job executed - `/usr/local/bin/healthcheck.sh`
+[2025-07-07 02:05:05] FILE: /var/log/healthcheck.log created by user 'root'
+[2025-07-07 02:05:10] BASH: Executed command `rm -rf /var/log/healthcheck.log`
+[2025-07-07 02:05:15] USER: systemd-logind -> session opened for user iotadmin by (uid=0)
+[2025-07-07 02:05:17] PAM: Authentication success for user 'iotadmin' from 10.0.0.7
+[2025-07-07 02:05:18] SSH: New connection from 10.0.0.7 using RSA key fingerprint SHA256:DD:EE:FF...
+[2025-07-07 02:05:20] BASH: Executed command `mkdir /tmp/testdir`
+[2025-07-07 02:05:22] FILE: /tmp/testdir created by user 'iotadmin'
+[2025-07-07 02:05:25] BASH: Executed command `rmdir /tmp/testdir`
+[2025-07-07 02:05:27] SSH: Session closed for 10.0.0.7
+[2025-07-07 02:06:00] CRON: Job executed - `/usr/local/bin/cleanup.sh`
+[2025-07-07 02:06:05] FILE: /var/log/cleanup.log created by user 'root'
+[2025-07-07 02:06:10] BASH: Executed command `rm -rf /var/log/cleanup.log`
+[2025-07-07 02:06:15] USER: systemd-logind -> session opened for user root by (uid=0)
+[2025-07-07 02:06:17] PAM: Authentication success for user 'root' from 192.168.1.12
+[2025-07-07 02:06:18] SSH: New connection from 192.168.1.12 using RSA key fingerprint SHA256:11:22:33...
+[2025-07-07 02:06:20] BASH: Executed command `hostname`
+[2025-07-07 02:06:22] FILE: /etc/hostname read by user 'root'
+[2025-07-07 02:06:25] BASH: Executed command `logout`
+[2025-07-07 02:06:26] SSH: Session closed for 192.168.1.12
+[2025-07-07 02:07:00] CRON: Job executed - `/usr/local/bin/rotate_logs.sh`
+[2025-07-07 02:07:05] FILE: /var/log/rotate.log created by user 'root'
+[2025-07-07 02:07:10] BASH: Executed command `rm -rf /var/log/rotate.log`
+[2025-07-07 02:07:15] USER: systemd-logind -> session opened for user admin by (uid=0)
+[2025-07-07 02:07:17] PAM: Authentication success for user 'admin' from 192.168.1.22
+[2025-07-07 02:07:18] SSH: New connection from 192.168.1.22 using RSA key fingerprint SHA256:44:55:66...
+[2025-07-07 02:07:20] BASH: Executed command `uptime`
+[2025-07-07 02:07:22] FILE: /proc/uptime read by user 'admin'
+[2025-07-07 02:07:25] BASH: Executed command `logout`
+[2025-07-07 02:07:26] SSH: Session closed for 192.168.1.22
+[2025-07-07 02:18:42] USER: systemd-logind -> session opened for user iotadmin by (uid=0)
+[2025-07-07 02:19:00] PAM: Authentication success for user 'iotadmin' from 150.214.47.147
+[2025-07-07 02:19:02] SSH: New connection from 150.214.47.147 using RSA key fingerprint SHA256:XX:XX:XX...
+[2025-07-07 02:19:15] BASH: Executed command `cp /tmp/GFdU4bGGouB1rN4EsgKNY/9M5XflZesIq6HJSRZhms.sh /tmp/iot_patch.sh`
+[2025-07-07 02:19:18] BASH: Executed command `chmod +x /tmp/iot_patch.sh && /tmp/iot_patch.sh`
+[2025-07-07 02:19:35] FILE: /etc/cron.d/sys-cleanup modified by user 'iotadmin'
+[2025-07-07 02:19:35] CRON: Job registered - `*/30 * * * * root /usr/local/bin/sys-update.sh #FLAG={cron_persistence_9d2k3z}`
+[2025-07-07 02:19:50] BASH: Executed command `rm -rf /tmp/iot_patch.sh`
+[2025-07-07 02:20:00] SSH: Session closed for 150.214.47.147
+[2025-07-07 02:20:05] USER: systemd-logind -> session opened for user guest by (uid=0)
+[2025-07-07 02:20:07] PAM: Authentication failure for user 'guest' from 172.16.0.3
+[2025-07-07 02:20:09] SSH: Failed connection from 172.16.0.3 using password authentication
+[2025-07-07 02:20:12] PAM: Authentication failure for user 'guest' from 172.16.0.3
+[2025-07-07 02:20:14] SSH: Failed connection from 172.16.0.3 using password authentication
+[2025-07-07 02:20:17] USER: systemd-logind -> session closed for user guest
+[2025-07-07 02:21:00] CRON: Job executed - `/usr/local/bin/cleanup.sh`
+[2025-07-07 02:21:05] FILE: /var/log/cleanup.log created by user 'root'
+[2025-07-07 02:21:10] BASH: Executed command `rm -rf /var/log/cleanup.log`
+[2025-07-07 02:21:15] USER: systemd-logind -> session opened for user admin by (uid=0)
+[2025-07-07 02:21:17] PAM: Authentication success for user 'admin' from 192.168.1.23
+[2025-07-07 02:21:18] SSH: New connection from 192.168.1.23 using RSA key fingerprint SHA256:77:88:99...
+[2025-07-07 02:21:20] BASH: Executed command `ls /var/log`
+[2025-07-07 02:21:22] FILE: /var/log/syslog read by user 'admin'
+[2025-07-07 02:21:25] BASH: Executed command `logout`
+[2025-07-07 02:21:26] SSH: Session closed for 192.168.1.23
+[2025-07-07 02:22:00] CRON: Job executed - `/usr/local/bin/monitor.sh`
+[2025-07-07 02:22:05] FILE: /var/log/monitor.log created by user 'root'
+[2025-07-07 02:22:10] BASH: Executed command `rm -rf /var/log/monitor.log`
+[2025-07-07 02:22:15] USER: systemd-logind -> session opened for user iotadmin by (uid=0)
+[2025-07-07 02:22:17] PAM: Authentication success for user 'iotadmin' from 10.0.0.8
+[2025-07-07 02:22:18] SSH: New connection from 10.0.0.8 using RSA key fingerprint SHA256:AA:BB:CC...
+[2025-07-07 02:22:20] BASH: Executed command `touch /tmp/testfile2`
+[2025-07-07 02:22:22] FILE: /tmp/testfile2 created by user 'iotadmin'
+[2025-07-07 02:22:25] BASH: Executed command `rm /tmp/testfile2`
+[2025-07-07 02:22:27] SSH: Session closed for 10.0.0.8
+[2025-07-07 02:23:00] CRON: Job executed - `/usr/local/bin/update.sh`
+[2025-07-07 02:23:05] FILE: /var/log/update.log created by user 'root'
+[2025-07-07 02:23:10] BASH: Executed command `rm -rf /var/log/update.log`
+[2025-07-07 02:23:15] USER: systemd-logind -> session opened for user root by (uid=0)
+[2025-07-07 02:23:17] PAM: Authentication success for user 'root' from 192.168.1.13
+[2025-07-07 02:23:18] SSH: New connection from 192.168.1.13 using RSA key fingerprint SHA256:DD:EE:FF...
+[2025-07-07 02:23:20] BASH: Executed command `uname -a`
+[2025-07-07 02:23:22] FILE: /etc/hostname read by user 'root'
+[2025-07-07 02:23:25] BASH: Executed command `logout`
+[2025-07-07 02:23:26] SSH: Session closed for 192.168.1.13
+[2025-07-07 02:24:00] CRON: Job executed - `/usr/local/bin/healthcheck.sh`
+[2025-07-07 02:24:05] FILE: /var/log/healthcheck.log created by user 'root'
+[2025-07-07 02:24:10] BASH: Executed command `rm -rf /var/log/healthcheck.log`
+[2025-07-07 02:24:15] USER: systemd-logind -> session opened for user admin by (uid=0)
+[2025-07-07 02:24:17] PAM: Authentication success for user 'admin' from 192.168.1.24
+[2025-07-07 02:24:18] SSH: New connection from 192.168.1.24 using RSA key fingerprint SHA256:11:22:33...
+[2025-07-07 02:24:20] BASH: Executed command `df -h`
+[2025-07-07 02:24:22] FILE: /etc/fstab read by user 'admin'
+[2025-07-07 02:24:25] BASH: Executed command `logout`
+[2025-07-07 02:24:26] SSH: Session closed for 192.168.1.24

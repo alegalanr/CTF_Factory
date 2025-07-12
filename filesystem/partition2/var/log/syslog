@@ -1,0 +1,16 @@
+Jul 10 08:15:22 server01 kernel: [    0.000000] Linux version 5.4.0-74-generic (buildd@lgw01-amd64-038) (gcc version 9.4.0 (Ubuntu 9.4.0-1ubuntu1~20.04.1)) #83-Ubuntu SMP Sat May 8 02:35:39 UTC 2021 (Ubuntu 5.4.0-74.83-generic 5.4.114)
+Jul 10 08:15:22 server01 systemd[1]: Starting LSB: Apache2 web server...
+Jul 10 08:15:23 server01 apache2[1234]: * Starting Apache httpd web server apache2
+Jul 10 08:15:23 server01 systemd[1]: Started LSB: Apache2 web server.
+Jul 10 08:15:24 server01 sshd[1456]: Server listening on 0.0.0.0 port 22.
+Jul 10 08:15:24 server01 sshd[1456]: Server listening on :: port 22.
+Jul 10 08:16:45 server01 sudo: admin : TTY=pts/0 ; PWD=/home/admin ; USER=root ; COMMAND=/bin/cat /etc/shadow
+Jul 10 08:17:12 server01 cron[2345]: (root) CMD (cd /opt/backup && ./backup.sh)
+Jul 10 08:18:33 server01 sshd[2567]: Failed password for root from 192.168.1.100 port 55432 ssh2
+Jul 10 08:18:35 server01 sshd[2567]: Failed password for root from 192.168.1.100 port 55432 ssh2
+Jul 10 08:18:37 server01 sshd[2567]: Failed password for root from 192.168.1.100 port 55432 ssh2
+Jul 10 08:18:39 server01 sshd[2567]: Connection closed by 192.168.1.100 port 55432 [preauth]
+Jul 10 08:19:45 server01 systemd[1]: Started Session 2 of user admin.
+Jul 10 08:20:12 server01 kernel: [  302.456789] Out of memory: Kill process 3456 (chrome) score 234 or sacrifice child
+Jul 10 08:21:30 server01 postfix/pickup[3789]: 4A2B1C0123: uid=1000 from=<user@localhost>
+Jul 10 08:22:15 server01 mysqld[4567]: 2021-07-10T08:22:15.123456Z 0 [Note] mysqld: ready for connections.

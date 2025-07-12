@@ -1,0 +1,10 @@
+Reto 1: FLAG={CTF-58732X-FA}
+Reto 2: FLAG={SuperSecurePasswd=candadobinario}
+Reto 3: FLAG={NotCandadoCifrado}
+Reto 4: FLAG{USBKiller_:-)}
+Reto 5: FLAG={cron_persistence_9d2k3z}
+Reto 6: FLAG={Bad_telemerty_Enabled}
+Reto 7: FLAG={thefactory}
+Reto 8: FLAG={Crongratulations_Hacker}
+Reto 9: FLAG={Kelsier_Never_Dies}
+Reto 10: FLAG={reverse_shell_to_150.214.47.147}

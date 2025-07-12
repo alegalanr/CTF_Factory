@@ -1,0 +1,20 @@
+# User crontab for admin user
+# m h  dom mon dow   command
+
+# Check mail every 15 minutes
+*/15 * * * * /usr/bin/fetchmail -s
+
+# Generate user reports daily
+0 9 * * * /home/admin/scripts/daily_report.sh
+
+# Backup user files nightly
+0 23 * * * /usr/bin/tar -czf /backup/user_backup_$(date +\%Y\%m\%d).tar.gz /home/admin/documents/
+
+# Clean browser cache weekly
+0 0 * * 0 /usr/bin/find ~/.cache -type f -atime +7 -delete
+
+# Update personal git repositories daily
+0 6 * * * cd /home/admin/projects && /usr/bin/git pull origin main
+
+# Check network connectivity every 30 minutes
+*/30 * * * * /bin/ping -c 1 8.8.8.8 > /dev/null || /usr/bin/logger "Network connectivity issue detected"

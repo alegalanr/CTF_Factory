@@ -1,0 +1,8 @@
+[Wed Jul 10 08:15:32.123456 2025] [mpm_prefork:notice] [pid 1234] AH00163: Apache/2.4.41 (Ubuntu) configured -- resuming normal operations
+[Wed Jul 10 08:15:32.123457 2025] [core:notice] [pid 1234] AH00094: Command line: '/usr/sbin/apache2'
+[Wed Jul 10 08:16:45.456789 2025] [core:error] [pid 2345] [client 192.168.1.15:54321] AH00037: Symbolic link not allowed or link target not accessible: /var/www/html/admin
+[Wed Jul 10 08:17:23.789012 2025] [auth_basic:error] [pid 2456] [client 192.168.1.20:44332] AH01617: user admin: authentication failure for "/secure": Password Mismatch
+[Wed Jul 10 08:18:12.234567 2025] [core:error] [pid 2567] [client 10.0.0.25:12345] AH00037: Symbolic link not allowed or link target not accessible: /var/www/html/wp-admin
+[Wed Jul 10 08:19:34.567890 2025] [authz_core:error] [pid 2678] [client 172.16.0.50:65432] AH01630: client denied by server configuration: /var/www/html/backup
+[Wed Jul 10 08:21:45.890123 2025] [core:error] [pid 2789] [client 203.0.113.15:33445] AH00037: Symbolic link not allowed or link target not accessible: /var/www/html/.env
+[Wed Jul 10 08:23:33.345678 2025] [core:error] [pid 2890] [client 10.0.0.99:55667] AH00037: Symbolic link not allowed or link target not accessible: /var/www/html/phpmyadmin
